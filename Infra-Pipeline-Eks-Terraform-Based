@@ -4,7 +4,7 @@ pipeline{
     stages {
         stage('Checkout from Git'){
             steps{
-                git branch: 'main', url: 'https://github.com/ElevenDevOps/Amazon-FE.git'
+                git branch: 'main', url: 'https://github.com/veeresh-111/Amazon-FE.git'
             }
         }
         stage('Terraform version'){
