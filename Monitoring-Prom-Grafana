@@ -1,12 +1,6 @@
 @Library("my-shared-library") _
 pipeline{
-    agent {
-         docker {
-            image 'maven:3.6-jdk-8'  // Docker image to use
-            label 'docker-agent'     // This label matches the Docker agent configuration, if using Option 1
-            args '-v /tmp:/tmp'       // Additional Docker arguments (e.g., volume mounts)
-        }
-     }
+ agent { label 'docker-agent' }
     stages {
         stage('Setup') {
             steps {
