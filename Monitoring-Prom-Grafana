@@ -6,7 +6,7 @@ pipeline{
             steps {
                 script {
                     // Add Helm repositories
-                     MyClass()
+                     myCustomStep.groovy
                 }
             }
         }
