@@ -1,11 +1,6 @@
 
 pipeline{
-    agent {
-         docker {
-            image 'jenkins/agent'  // Specify the Docker image you want to use
-            label 'docker-label'        // Optionally specify the label of the Docker agent template
-        }
-     }
+    agent any
     stages {
         stage('Checkout from Git'){
             steps{
